@@ -185,6 +185,7 @@ namespace Alquiler_automovil
             this.btn_cargar.TabIndex = 13;
             this.btn_cargar.Text = "Cargar";
             this.btn_cargar.UseVisualStyleBackColor = true;
+            this.btn_cargar.Click += new System.EventHandler(this.btn_cargar_Click);
             // 
             // label6
             // 

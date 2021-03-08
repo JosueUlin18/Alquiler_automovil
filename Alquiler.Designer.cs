@@ -59,6 +59,7 @@ namespace Alquiler_automovil
             this.menuPrincipalToolStripMenuItem.Name = "menuPrincipalToolStripMenuItem";
             this.menuPrincipalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.menuPrincipalToolStripMenuItem.Text = "Menu principal";
+            this.menuPrincipalToolStripMenuItem.Click += new System.EventHandler(this.menuPrincipalToolStripMenuItem_Click);
             // 
             // Alquiler
             // 

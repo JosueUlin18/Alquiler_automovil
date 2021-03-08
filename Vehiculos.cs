@@ -59,5 +59,26 @@ namespace Alquiler_automovil
             dataGridView1.DataSource = ingreso;
             dataGridView1.Refresh();
         }
+
+        private void btn_cargar_Click(object sender, EventArgs e)
+        {
+            FileStream stream = new FileStream("IngresoVehiculo.txt", FileMode.Open, FileAccess.Read);
+            StreamReader reader = new StreamReader(stream);
+
+            while (reader.Peek() > -1)
+            {
+                C_vehiculo Temp = new C_vehiculo();
+                Temp.Placa = reader.ReadLine();
+                Temp.Marca = reader.ReadLine();
+                Temp.Modelo = reader.ReadLine();
+                Temp.Color = reader.ReadLine();
+                Temp.Precio = Convert.ToInt32(reader.ReadLine());
+                ingreso.Add(Temp);
+            }
+            reader.Close();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = ingreso;
+            dataGridView1.Refresh();
+        }
     }
 }

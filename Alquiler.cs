@@ -21,5 +21,12 @@ namespace Alquiler_automovil
         {
 
         }
+
+        private void menuPrincipalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form principal = new Form1();
+            principal.Show();
+            this.Close();
+        }
     }
 }
