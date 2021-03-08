@@ -12,6 +12,7 @@ namespace Alquiler_automovil
 {
     public partial class Vehiculos : Form
     {
+        List<C_vehiculo> ingreso = new List<C_vehiculo>();
         public Vehiculos()
         {
             InitializeComponent();
@@ -25,6 +26,21 @@ namespace Alquiler_automovil
         }
 
         private void Vehiculos_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void agregar()
+        {
+            C_vehiculo Temp = new C_vehiculo();
+            Temp.Placa = txt_placa.Text;
+            Temp.Marca = txt_marca.Text;
+            Temp.Modelo = txt_modelo.Text;
+            Temp.Color = txt_color.Text;
+            Temp.Precio = Convert.ToInt32(txt_precio);
+            ingreso.Add(Temp);
+
+        }
+        private void btn_agregar_Click(object sender, EventArgs e)
         {
 
         }
