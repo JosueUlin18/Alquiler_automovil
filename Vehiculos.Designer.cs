@@ -44,7 +44,6 @@ namespace Alquiler_automovil
             this.txt_precio = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_agregar = new System.Windows.Forms.Button();
-            this.btn_cargar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -60,6 +59,7 @@ namespace Alquiler_automovil
             this.menuStrip1.Size = new System.Drawing.Size(928, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // opcionesToolStripMenuItem
             // 
@@ -177,16 +177,6 @@ namespace Alquiler_automovil
             this.btn_agregar.UseVisualStyleBackColor = true;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
-            // btn_cargar
-            // 
-            this.btn_cargar.Location = new System.Drawing.Point(638, 373);
-            this.btn_cargar.Name = "btn_cargar";
-            this.btn_cargar.Size = new System.Drawing.Size(197, 56);
-            this.btn_cargar.TabIndex = 13;
-            this.btn_cargar.Text = "Cargar";
-            this.btn_cargar.UseVisualStyleBackColor = true;
-            this.btn_cargar.Click += new System.EventHandler(this.btn_cargar_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -203,7 +193,6 @@ namespace Alquiler_automovil
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(928, 450);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btn_cargar);
             this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_precio);
@@ -247,7 +236,6 @@ namespace Alquiler_automovil
         private System.Windows.Forms.TextBox txt_precio;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_agregar;
-        private System.Windows.Forms.Button btn_cargar;
         private System.Windows.Forms.Label label6;
     }
 }
