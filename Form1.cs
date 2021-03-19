@@ -21,14 +21,14 @@ namespace Alquiler_automovil
         {
             Vehiculos registrar = new Vehiculos();
             registrar.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btn_alquilar_Click(object sender, EventArgs e)
         {
             Alquiler alquilar = new Alquiler();
             alquilar.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)

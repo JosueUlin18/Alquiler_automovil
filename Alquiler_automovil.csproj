@@ -52,6 +52,7 @@
     <Compile Include="Alquiler.Designer.cs">
       <DependentUpon>Alquiler.cs</DependentUpon>
     </Compile>
+    <Compile Include="C_cliente.cs" />
     <Compile Include="C_vehiculo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
